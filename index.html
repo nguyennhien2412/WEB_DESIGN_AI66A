@@ -4,46 +4,53 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
-    <h1>Overview</h1>
-
-    <a href="https://fda.neu.edu.vn" target="_blank">External link</a>
-    <a href="#features" target="_blank">In-page link</a>
-
-    <figure>
-      <img
-        src="https://fda.neu.edu.vn/wp-content/uploads/2025/03/z6365845086832_6afda338745b116ebae8065e9fff43e1-1-e1741016927798.jpg"
-        alt="FDA Logo"
-        width="300"
-      />
-      <figcaption>Fig1. Anh tu trang FDA</figcaption>
-    </figure>
-
-    <ul>
-      <li>HTML</li>
-      <li>CSS</li>
-      <li>JavaScript</li>
-    </ul>
-
-    <ol>
-      <li>HTML</li>
-      <li>CSS</li>
-      <li>JavaScript</li>
-    </ol>
-
-    <p>
-      <b>This is a simple HTML document that serves as an overview page. It</b>
-      includes a heading and a paragraph to provide information about the
-      content <em> of the page </em>. You can add more elements and styles to
-      enhance the appearance and functionality of the page as needed.
-    </p>
-
-    <p>
-      <strong>This is a second </strong> paragraph that provides additional
-      information. You can use multiple paragraphs to organize your content and
-      make it easier for readers to <i>follow along</i>. Remember to use
-      appropriate HTML tags to structure your content effectively.
-    </p>
+    <header>Exam Result</header>
+    <main>
+      <form action="" id="score-form">
+        <div class="score">
+          <label for="mon1">Subject 1</label>
+          <input
+            id="mon1"
+            name="mon1"
+            type="number"
+            required
+            min="0"
+            max="10"
+            step="0.01"
+          />
+        </div>
+        <div class="score">
+          <label for="mon2">Subject 2</label>
+          <input
+            id="mon2"
+            name="mon2"
+            type="number"
+            required
+            min="0"
+            max="10"
+            step="0.01"
+          />
+        </div>
+        <div class="score">
+          <label for="mon3">Subject 3</label>
+          <input
+            id="mon3"
+            name="mon3"
+            type="number"
+            required
+            min="0"
+            max="10"
+            step="0.01"
+          />
+        </div>
+        <button type="submit">Calculate</button>
+      </form>
+      <p id="total"></p>
+    </main>
+    <script src="app.js"></script>
   </body>
 </html>
